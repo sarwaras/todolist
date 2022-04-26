@@ -24,6 +24,7 @@ this.props.updateTodo(id,event.target.checked)
   handelDelete = (id) => {
       if(window.confirm("确定删除吗？")){
           this.props.deleteTodo(id)
+          console.log(this.props);
       }
   }
 
